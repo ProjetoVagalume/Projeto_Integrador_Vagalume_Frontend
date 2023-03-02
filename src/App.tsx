@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Login from './paginas/login/Login';
-import Cadastro from './cadastro/cadastro/Cadastro';
+import Cadastro from './paginas/cadastro/Cadastro';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
@@ -17,7 +17,7 @@ function App() {
           <Routes> // Antigo Switch
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/cadastrolavanderia" element={<Cadastro />} />
             <Route path="/home" element={<Home />} />            
           </Routes>
         </div>

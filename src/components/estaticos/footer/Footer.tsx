@@ -1,7 +1,6 @@
 import React from "react";
 import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GithubIcon from '@material-ui/icons/GitHub';
 import { Grid, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import './Footer.css';
@@ -12,17 +11,14 @@ function Footer(){
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-me os bons: </Typography>
+                            <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais</Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://www.facebook.com/willmatheuz" target="_blank">
-                                <FacebookIcon className='redes'/>
-                            </a>
-                            <a href="https://www.instagram.com/willmatheuz/" target="_blank">
+                            <a href="https://www.instagram.com/vagalumelavesempre/" target="_blank">
                                 <InstagramIcon className='redes'/>
                             </a>
-                            <a href="https://www.linkedin.com/in/willian-matheus-3533617b/" target="_blank">
-                                <LinkedInIcon className='redes'/>
+                            <a href="https://github.com/ProjetoVagalume/" target="_blank">
+                                <GithubIcon className='redes'/>
                             </a>
                         </Box>
                     </Box>
@@ -31,8 +27,8 @@ function Footer(){
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2023 Copyright:</Typography>
                         </Box>
                         <Box >
-                            <a target="_blank" href="https://github.com/OWillMatheuz" >
-                                <Typography  variant="subtitle2" gutterBottom align="center" className='textos'>github.com/OWillMatheuz</Typography>
+                            <a target="_blank" href="https://github.com/ProjetoVagalume" >
+                                <Typography  variant="subtitle2" gutterBottom align="center" className='textos'>github.com/ProjetoVagalume</Typography>
                             </a>
                         </Box>
                     </Box>
