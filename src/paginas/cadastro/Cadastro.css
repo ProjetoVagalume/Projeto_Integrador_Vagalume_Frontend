@@ -1,0 +1,21 @@
+.imagem2{
+    background-image: url(https://png.pngtree.com/png-vector/20191023/ourlarge/pngtree-laundry-icon-and-symbol-template-png-image_1853157.jpg );
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.textos2{
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.btnCancelar{
+    margin-right: 20px !important;
+    background: red !important;
+}
+.btnCad{
+    background: #001d3d !important ;
+}

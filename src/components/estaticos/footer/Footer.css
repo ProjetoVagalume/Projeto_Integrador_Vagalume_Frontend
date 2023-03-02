@@ -1,11 +1,10 @@
 .box1{
-    background: rgb(167,106,8);
-    background: linear-gradient(90deg, rgba(167,106,8,1) 29%, rgba(0,0,0,1) 83%);
+    background: #02c39a;
     height: "120px";
     color:white !important;
 }
 .box2{
-background-color: black;
+background-color: #001d3d !important;
 color: white !important;
 
 }
