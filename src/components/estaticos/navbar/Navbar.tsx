@@ -1,13 +1,18 @@
 import React from "react";
 import { AppBar, Toolbar, Typography} from '@material-ui/core';
 import { Box } from '@mui/material';
-import { FaDev } from 'react-icons/fa';
 import { Link } from "react-router-dom";
-
+import HomeIcon from '@material-ui/icons/Home';
+import PostAddIcon from '@material-ui/icons/PostAdd';
+import SubjectIcon from '@material-ui/icons/Subject';
+import InfoIcon from '@material-ui/icons/Info';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 function Navbar(){
     const estilo = {
-        background: 'rgb(167,106,8)',
-        backgroundImage: 'linear-gradient(90deg, rgba(167,106,8,1) 29%, rgba(0,0,0,1) 83%)'
+        background: '#001d3d',
+        backgroundImage: '#001d3d'
 };
     return (
         <>
@@ -15,45 +20,45 @@ function Navbar(){
                 <Toolbar variant="dense">
                     <Box className='cursor'>
                         <Typography  variant="h5" color="inherit">
-                        <FaDev className="corlogo"/> <b className="corlogo">Java Full Stack Jr.</b>
+                        
                         </Typography>
                     </Box>
 
                     <Box display="flex" justifyContent="start">
                         <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                 | Home |
+                            <Typography variant="h6" color="inherit" >
+                            <HomeIcon /> Home
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               | Postagens |
+                             <LibraryBooksIcon />Postagens
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               | Temas |
+                               <SubjectIcon />Temas
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               | Cadast. Temas |
+                             <PostAddIcon/> Cadast. Temas
                             </Typography>
                         </Box>
-<Box mx={1} className='cursor'>
+                            <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               | Sobre Mim |
+                               <InfoIcon/>Sobre Nós
                             </Typography>
                         </Box>
                         <Box mx={1} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               | Portfólio |
+                              <ContactsIcon/> Contatos
                             </Typography>
                         </Box>
                         <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                <b className="corlogo">Sair</b>
+                                <Typography variant="h6" color="inherit" >
+                               <b className="corlogo"><ExitToAppIcon/>Sair</b>
                                 </Typography>
                             </Box>
                         </Link>
