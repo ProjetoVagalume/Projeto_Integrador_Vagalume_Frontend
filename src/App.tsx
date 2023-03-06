@@ -6,6 +6,7 @@ import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import './App.css';
+import Lavanderias from './paginas/lavanderias/Lavanderias';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/cadastrolavanderia" element={<Cadastro />} />
-            <Route path="/home" element={<Home />} />            
+            <Route path="/home" element={<Home />} /> 
+            <Route path="/lavanderias" element={<Lavanderias />} />         
           </Routes>
         </div>
           <Footer />

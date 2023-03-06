@@ -1,6 +1,9 @@
 .cursor{
     cursor: pointer !important;
-    color: black !important;
+    letter-spacing: 20rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
 }
 
 .text-decorator-none{
@@ -11,4 +14,7 @@
 }
 .barra{
     width: 20px !important;
+}
+.corlogo{
+    text-decoration: none
 }
