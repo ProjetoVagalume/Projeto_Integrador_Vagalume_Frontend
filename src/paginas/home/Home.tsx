@@ -22,7 +22,7 @@ function Home(){
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://cdn.discordapp.com/attachments/1064895158736408576/1080951240118255746/pngtree-laundry-icon-and-symbol-template-png-image_1853157-removebg-preview.png" alt="" width="500px" height="500px"/>
+                    <img src="https://media.giphy.com/media/StWs9iYidDmIEjWvmh/giphy.gif" alt="" width="500px" height="500px"/>
                 </Grid>
                 <Grid xs={12} className='postagens'>
                 </Grid>
