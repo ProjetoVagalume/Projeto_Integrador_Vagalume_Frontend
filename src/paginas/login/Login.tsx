@@ -87,7 +87,7 @@ return (
                             <Typography variant='subtitle2' gutterBottom align='center'>Seus dados são criptografados!</Typography>
                         </Box>
             </Grid>
-            <Grid xs={4} className='imagem'>
+            <Grid xs={4} className='imagem1'>
 
             </Grid>
         </Grid>

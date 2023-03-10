@@ -7,6 +7,7 @@ import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import './App.css';
 import Lavanderias from './paginas/lavanderias/Lavanderias';
+import ListaTema from './components/tema/listatema/ListaTema';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/cadastrolavanderia" element={<Cadastro />} />
             <Route path="/home" element={<Home />} /> 
-            <Route path="/lavanderias" element={<Lavanderias />} />         
+            <Route path="/lavanderias" element={<Lavanderias />} />
+            <Route path="/temas" element={<ListaTema />} />      
           </Routes>
         </div>
           <Footer />
