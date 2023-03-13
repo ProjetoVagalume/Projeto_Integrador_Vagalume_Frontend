@@ -4,7 +4,7 @@
 
 </div>  
 
-VAGALUME é um projero desenvolvido durante o curso da **[Generation Brasil](https://brazil.generation.org/)**  utilizando as tecnologias ***Java, Spring Boot, REST API, MySQL, React Js e TypeScript***.
+VAGALUME é um projeto desenvolvido durante o curso da **[Generation Brasil](https://brazil.generation.org/)**  utilizando as tecnologias ***Java, Spring Boot, REST API, MySQL, React Js e TypeScript***.
 
 ## **:rocket: OBJETIVO**
 
@@ -15,7 +15,7 @@ Uma aplicação que integra o caminhoneiro(a) com lavanderias mais próximas da 
 
 
 #### **Backend:** [Spring Boot](https://spring.io/projects/spring-boot) + [Java 11](https://www.java.com/pt-BR/) + [MySQL](https://www.mysql.com/)
-#### **Frontend:** [React.js] (https://pt-br.reactjs.org/) + [Typescript] (https://www.typescriptlang.org/)
+#### **Frontend:** [React Js](https://pt-br.reactjs.org/) + [Typescript](https://www.typescriptlang.org/)
 
 ## **:star2: DESENVOLVEDORES**
 
