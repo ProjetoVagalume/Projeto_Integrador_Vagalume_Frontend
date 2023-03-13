@@ -2,9 +2,9 @@ import React,{useState, useEffect, ChangeEvent} from 'react';
 import { Grid,Typography, TextField, Button } from '@material-ui/core';
 import { Link, useNavigate } from 'react-router-dom';
 import useLoclaStorage from 'react-use-localstorage';
-import {login} from '../services/Service';
+import {login} from '../../services/Service';
 import {Box} from '@mui/material';
-import UsuarioLogin from '../models/UsuarioLogin';
+import UsuarioLogin from '../../components/models/UsuarioLogin';
 import './Login.css';
 
 

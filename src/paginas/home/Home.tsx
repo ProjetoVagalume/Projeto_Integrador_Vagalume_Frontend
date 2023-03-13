@@ -1,7 +1,7 @@
+import React from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import TextsmsIcon from '@material-ui/icons/Textsms';
-import React from 'react';
 import './Home.css';
 
 function Home(){

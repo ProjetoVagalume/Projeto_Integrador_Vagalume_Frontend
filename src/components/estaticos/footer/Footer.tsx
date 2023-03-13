@@ -1,10 +1,14 @@
 import React from "react";
 import InstagramIcon from '@material-ui/icons/Instagram';
-import GithubIcon from '@material-ui/icons/GitHub';
-import { Grid, Typography } from "@material-ui/core";
 import { Box } from "@mui/material";
 import './Footer.css';
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import { GitHub } from "@mui/icons-material";
+
+
 function Footer(){
+
     return (
         <>
         <Grid container  direction="row" justifyContent="center" alignItems="center">
@@ -18,7 +22,7 @@ function Footer(){
                                 <InstagramIcon className='redes'/>
                             </a>
                             <a href="https://github.com/ProjetoVagalume/" target="_blank">
-                                <GithubIcon className='redes'/>
+                                <GitHub className='redes'/>
                             </a>
                         </Box>
                     </Box>

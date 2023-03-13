@@ -2,11 +2,13 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import {Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import {Box} from '@mui/material';
-import Tema from '../../../paginas/models/Tema';
+
 import './ListaTema.css';
 import useLocalStorage from 'react-use-localstorage';
 import {useNavigate} from 'react-router-dom';
-import { busca } from '../../../paginas/services/Service';
+import Tema from '../../models/Tema';
+import { busca } from '../../../services/Service';
+
 
 
 function ListaTema() {
