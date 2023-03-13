@@ -17,9 +17,8 @@ import DeletarTema from './components/temas/deletarTema/DeletarTema';
 function App() {
 
   return (
-
     <Router>
-      <Navbar />
+    <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes> // Antigo Switch
           <Route path="/" element={<Login />} />
