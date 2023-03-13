@@ -9,12 +9,7 @@ function CadastroTema(){
             <Container>
                 <form>  
                 <Typography> Cadastre um tema </Typography>
-                <TextField 
-                    name= 'descricao'
-                    id= 'descricao'
-                    label= 'Tipo descrição'
-                    variant= 'outlined'
-                    />
+                <TextField name= 'descricao' id= 'descricao' label= 'Tipo descrição' variant= 'outlined' />
 
                 <Button variant='contained' type='submit' color='primary' >Cadastrar</Button>
 
