@@ -15,7 +15,7 @@ Uma aplicação que integra o caminhoneiro(a) com lavanderias mais próximas da 
 
 
 #### **Backend:** [Spring Boot](https://spring.io/projects/spring-boot) + [Java 11](https://www.java.com/pt-BR/) + [MySQL](https://www.mysql.com/)
-#### **Frontend:** Em construção 🚧
+#### **Frontend:** React.js 🚧
 
 ## **:star2: DESENVOLVEDORES**
 
