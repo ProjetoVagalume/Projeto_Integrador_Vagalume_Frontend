@@ -7,9 +7,8 @@ import { Box } from '@mui/material';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import './Login.css';
 
-const estilo = {
-  background: '57cc99',
-};
+const className ="estilo"
+
 function Login() {
   let navigate = useNavigate();
   const [token, setToken] = useLoclaStorage('token');
@@ -46,7 +45,7 @@ function Login() {
 
   return (
     <Grid
-      style={estilo}
+      className ="estilo"
       container
       direction="row"
       justifyContent="center"
