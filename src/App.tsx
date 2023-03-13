@@ -8,8 +8,8 @@ import Home from './paginas/home/Home';
 import './App.css';
 import Lavanderias from './paginas/lavanderias/Lavanderias';
 import ListaTema from './components/tema/listatema/ListaTema';
-import CadastroTema from './components/tema/cadastroTema/CadastroTema';
- 
+
+
 function App() {
   return (
     <>
@@ -22,8 +22,7 @@ function App() {
             <Route path="/cadastrolavanderia" element={<Cadastro />} />
             <Route path="/home" element={<Home />} /> 
             <Route path="/lavanderias" element={<Lavanderias />} />
-            <Route path="/temas" element={<ListaTema />} />      
-            <Route path="/cadastrotema" element={<CadastroTema />} />
+            <Route path="/temas" element={<ListaTema />} />     
           </Routes>
         </div>
           <Footer />
