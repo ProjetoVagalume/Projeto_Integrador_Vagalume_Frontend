@@ -9,18 +9,18 @@ import InfoIcon from '@material-ui/icons/Info';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
-
+import './Navbar.css'
 function Navbar(){
     const estilo = {
         background: '#001d3d',
-        backgroundImage: '#001d3d'
+        backgroundImage: '#001d3d',
 };
     return (
         <>
-          <AppBar className='cursor' position="static" style={estilo}>
-                <Toolbar variant="regular">
-                    <Box className='cursor'>
-                    <Link to='/login' className='text-decorator-none'>
+          <AppBar position="static" style={estilo} className="cursor">
+                <Toolbar className="cursor" variant="regular">
+                    <Box >
+                    <Link to='/login' className="text-decorator-none">
                         <Typography  variant="h6" color="inherit">
                         <img src="/logoprojeto.png" alt="logo" height="80" />
                         </Typography>
@@ -28,45 +28,48 @@ function Navbar(){
                     </Box>
                 
                     <Box display="flex" justifyContent="start">
-                        <Box mx={3} className='cursor'>
+                        <Box mx={3} display="flex" alignItems="center" justifyContent="center">
                             <Typography  variant="h6" color="inherit" >
                             <HomeIcon /> Home
                             </Typography>
+                            
                         </Box>
-                        <Box mx={3} className='cursor'>
+                        <Box mx={3} className="cursor">
                             <Typography variant="h6" color="inherit">
                              <LibraryBooksIcon />Postagens
                             </Typography>
                         </Box>
+                        <Link to="/temas" className="text-decorator-none">
                         <Box mx={3} className='cursor'>
                             <Typography variant="h6" color="inherit">
-                               <SubjectIcon />Temas
+                               <SubjectIcon className="coricone" />Temas
                             </Typography>
                         </Box>
-                        <Box mx={3} className='cursor'>
+                        </Link>
+                        <Box mx={3} className="cursor">
                             <Typography variant="h6" color="inherit">
                              <PostAddIcon/> Cadast. Temas
                             </Typography>
                         </Box>
-                            <Box mx={3} className='cursor'>
+                            <Box mx={3} className="cursor">
                             <Typography variant="h6" color="inherit">
                                <InfoIcon/>Sobre Nós
                             </Typography>
                         </Box>
-                        <Box mx={3} >
-                        <Link to='/lavanderias' className="corlogo">
-                            <Typography variant="h6" color="inherit">
+                        <Box mx={3} className="cursor">
+                        <Link to='/lavanderias' className="text-decorator-none">
+                            <Typography className="cursor" variant="h6" color="inherit">
                               <ContactsIcon />Lavanderias
                             </Typography>
                         </Link>    
                         </Box>
-                        <Box mx={3} className='cursor'>
+                        <Box mx={3} className="cursor">
                             <Typography variant="h6" color="inherit">
                               <ContactsIcon/> Contatos
                             </Typography>
                         </Box>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={3} className='cursor'>
+                        <Link to='/login' className="text-decorator-none">
+                            <Box mx={3} className="cursor">
                                 <Typography variant="h6" color="inherit" >
                                <b className="corlogo"><ExitToAppIcon/>Sair</b>
                                 </Typography>

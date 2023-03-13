@@ -1,20 +1,15 @@
 .cursor{
-    cursor: pointer !important;
-    letter-spacing: 20rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    cursor: pointer;
+    color: white !important;
+    text-decoration: none;
 }
 
 .text-decorator-none{
     text-decoration: none;
 }
-.vagalume{
-    background: #001d3d !important;
-}
-.barra{
-    width: 20px !important;
-}
-.corlogo{
-    text-decoration: none
+.coricone{
+    color: white !important;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
 }
