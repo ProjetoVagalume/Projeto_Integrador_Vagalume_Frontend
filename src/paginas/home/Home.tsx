@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router';
 import useLocalStorage from 'react-use-localstorage';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 
-
 function Home() {
 
     let navigate = useNavigate();
