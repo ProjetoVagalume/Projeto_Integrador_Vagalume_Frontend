@@ -5,6 +5,7 @@ import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
 import useLocalStorage from 'react-use-localstorage';
+import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 
 function Home() {
 
