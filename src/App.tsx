@@ -11,7 +11,7 @@ import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/tema/cadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
-import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import DeletarTema from './components/tema/deletarTema/DeletarTema';
 
 
 function App() {
