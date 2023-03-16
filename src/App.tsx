@@ -16,6 +16,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 
 
+
 function App() {
 
   return (
@@ -32,7 +33,7 @@ function App() {
 
           <Route path="/home" element={<Home />} />
 
-          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+          <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
 
           <Route path="/temas" element={<ListaTema />} />
 
