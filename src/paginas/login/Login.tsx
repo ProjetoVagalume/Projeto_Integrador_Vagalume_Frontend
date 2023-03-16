@@ -1,17 +1,53 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
-import { Grid, Typography, TextField, Button } from '@material-ui/core';
+
 import { Link, useNavigate } from 'react-router-dom';
-import useLoclaStorage from 'react-use-localstorage';
+
+
 import { login } from '../../services/Service';
-import { Box } from '@mui/material';
+
 import UsuarioLogin from '../../models/UsuarioLogin';
 import './Login.css';
 
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import CssBaseline from '@mui/material/CssBaseline';
+import TextField from '@mui/material/TextField';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
+
+
 const className ="estilo"
+
+const theme = createTheme();
+
+function Copyright(props: any) {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center" {...props}  className="texto2">
+      {'Copyright © '}
+      <a color="inherit" href="https://github.com/ProjetoVagalume">
+        Vagalume
+      </a>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
+
 
 function Login() {
   let navigate = useNavigate();
-  const [token, setToken] = useLoclaStorage('token');
+  const dispatch = useDispatch();
+  const [token, setToken] = useState('');
+
 
   const [userLogin, setUserLogin] = useState<UsuarioLogin>({
     id: 0,
@@ -28,6 +64,7 @@ function Login() {
 
   useEffect(() => {
     if (token != '') {
+      dispatch(addToken(token));
       navigate('/home');
     }
   }, [token]);
@@ -44,84 +81,96 @@ function Login() {
   }
 
   return (
-    <Grid
-      className ="estilo"
-      container
-      direction="row"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Grid alignItems="center" xs={6}>
-        <Box paddingX={20}>
-          <form onSubmit={onSubmit}>
-            <Typography
-              variant="h3"
-              gutterBottom
-              color="textPrimary"
-              component="h3"
-              align="center"
-              className="textoscomponents"
-            >
+    <ThemeProvider theme={theme} >
+      <Grid container component="main" sx={{ height: '100vh' }}>
+        <CssBaseline />
+        <Grid
+          item
+          xs={false}
+          sm={4}
+          md={7}
+          sx={{
+            backgroundImage: 'url(https://tinypic.host/images/2023/03/03/pexels-ekaterina-belinskaya-4700398.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: (t) =>
+              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            
+          }}
+        />
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className='fundo' >
+          <Box 
+            sx={{
+              my: 8,
+              mx: 4,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <img src="https://imgur.com/ub102Ks.png" alt="logo" height="80" />
+            <Typography component="h1" variant="h5" className='texto'>
               Entrar
             </Typography>
-            <TextField
-              value={userLogin.usuario}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-              id="usuario"
-              label="Usuário(E-mail)*"
-              variant="outlined"
-              name="usuario"
-              margin="normal"
-              fullWidth
-            />
-            <TextField
-              value={userLogin.senha}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-              id="senha"
-              label="Senha*"
-              variant="outlined"
-              name="senha"
-              margin="normal"
-              type="password"
-              fullWidth
-            />
-            <Box marginTop={2} textAlign="center">
+            <Box component="form" noValidate onSubmit={onSubmit} sx={{ mt: 1 }}>
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="usuario"
+                label="Usuario"
+                name="usuario"
+                autoComplete="email"
+                value={userLogin.usuario}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="senha"
+                label="Senha"
+                type="password"
+                id="senha"
+                value={userLogin.senha}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                autoComplete="current-password"
+              />
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary"  className="texto2"/>}
+                label="Lembre-me"
+              />
               <Button
                 type="submit"
+                fullWidth
                 variant="contained"
-                color="primary"
+                sx={{ mt: 3, mb: 2 }}
                 className="btnentrar"
               >
-                Logar
+                Entrar
               </Button>
+
+              <Grid container className="texto2">
+                <Grid item xs>
+                  
+                Cadastre sua Lavanderia!
+                  
+                </Grid>
+                <Grid item  className="texto2">
+                  <Link to=''>
+                    {"Não tem uma conta? Inscrever-se"}
+                  </Link>
+                </Grid>
+              </Grid>
+              <Copyright sx={{ mt: 5 }} />
             </Box>
-          </form>
-          <Box display="flex" justifyContent="center" marginTop={2}>
-            <Box marginRight={1}>
-              <Typography variant="subtitle1" gutterBottom align="center">
-                Não tem uma conta?
-              </Typography>
-            </Box>
-            <Link to="/cadastrousuario" className="text-decorator-none">
-              <Typography
-                variant="subtitle1"
-                gutterBottom
-                align="center"
-                className="cadastrarusuario"
-              >
-                Cadastre sua lavanderia
-              </Typography>
-            </Link>
           </Box>
-        </Box>
-        <Box marginRight={1}>
-          <Typography variant="subtitle2" gutterBottom align="center">
-            Seus dados são criptografados!
-          </Typography>
-        </Box>
+        </Grid>
       </Grid>
-      <Grid xs={4} className="imagem1"></Grid>
-    </Grid>
+    </ThemeProvider>
+
   );
 }
 

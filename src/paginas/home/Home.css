@@ -1,16 +1,11 @@
-.corlogo{
-    color: white;
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-}
 .caixa{
-    background: #02c39a;
-    background: #02c39a;
+    background: #001d3d ;
+    background: #001d3d ;
 }
 .titulo{
-    color: white !important;
+    color: #1B96CC !important; 
     font-weight: bold !important;
+    
 
 }
 .botao1{
@@ -18,10 +13,12 @@
     background-color:#001d3d !important;
     color: white !important;
 }
-.botao2{
+.btnModal{
     border-color: white !important;
-    background-color: #001d3d !important;
+    background-color:#001d3d !important;
     color: white !important;
+    width: 160px;
+    height: 90px;
 }
 .foto{
     background-image: url(https://media.giphy.com/media/StWs9iYidDmIEjWvmh/giphy.gif);
