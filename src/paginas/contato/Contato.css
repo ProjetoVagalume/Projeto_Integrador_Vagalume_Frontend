@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-color: #1B96CC  ;
+}
+.tituloC{
+    color: #001d3d !important;  
+    font-weight: 'bold' !important;
+    font-family: 'Bebas Neue' !important;
+    font-size: 75px !important;
+}
+.tituloC3{
+    color: #FFD565  !important;
+    font-family: 'Roboto' !important;
+    font-size: 30px !important;
+}
+.intro-C{
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
+}
+.cardCont {
+    width: 400px;
+    height: 200px;
+    background-image: url("") !important;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+}
+.botaoCntt{
+    color: #001d3d !important;
+    width: fit-content !important;
+    height: fit-content !important;
+    font-size: 20px !important;
+}
+
+.btnenviar{
+    border-color: white !important;
+    background-color:#001d3d !important;
+    color: white !important;
+    width: 10px;
+    height: 30px;
+}
+.center
+{
+    text-align: center;
+}
