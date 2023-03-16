@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid,Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
+
 import ModalPostagem from '../../components/postagens/moldalPostagem/ModalPostagem';
+
+import { Link } from 'react-router-dom';
+
 
 function Home() {
 
@@ -35,9 +39,10 @@ function Home() {
                         <Box marginRight={1}>
                         <ModalPostagem />
                         </Box>
+                        <Link to="/posts">
+                            <Button variant="outlined" className='botao2'> Ver Lavanderias</Button>
+                        </Link>
                         
-                        
-                        <Button variant="outlined" className='btnModal'>  Ver Lavanderias</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
