@@ -51,7 +51,6 @@ function CadastroTema() {
         })
 
     }
-
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         console.log("tema " + JSON.stringify(tema))
@@ -73,8 +72,36 @@ function CadastroTema() {
             })
             alert('Tema cadastrado com sucesso');
         }
+        
+        async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+            e.preventDefault()
+            console.log("temas " + JSON.stringify(tema))
+    
+            if (id !== undefined) {
+                console.log(tema)
+                put(`/temas`, tema, setTema, {
+                    headers: {
+                        'Authorization': token
+                    }
+                })
+                alert('Tema atualizado com sucesso');
+            } else {
+                post(`/temas`, tema, setTema, {
+                    headers: {
+                        'Authorization': token
+                    }
+                })
+                alert('Tema cadastrado com sucesso');
+            }
+            back()
+    
+        }
+    
+        function back() {
+            navigate('/temas')
+        }
+  
         back()
-
     }
 
     function back() {
