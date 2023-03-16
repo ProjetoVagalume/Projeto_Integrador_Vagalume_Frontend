@@ -20,15 +20,15 @@ function SobreNos() {
                             </Typography>
                             <Typography color="textPrimary" variant="h5" align="center" className="subtitulo">
                                 E pensamos em algo que vai ajudar, a partir deste projeto nossos motorista vão conseguir pesquizar as lavanderia de forma simples e com um baixo custo.
-                                Alem de trazer satisfação aos clientes motorista estamos ajudando no capital financeiro da região, produzindo oportunidades a pessoas que estão longe do mercador de trabalho 
-                                ou que também querem mudar de area. 
+                                Alem de trazer satisfação aos clientes motorista estamos ajudando no capital financeiro da região, produzindo oportunidades a pessoas que estão longe do mercador de trabalho
+                                ou que também querem mudar de area.
                                 A junção  dos motorista com a lavanderia é trazer um bem estar para a pessoa dirigir por dias e o bem estar de um familia que pode estar vivendo apenas desta renda ou como uma renda extra.
                             </Typography>
                         </Box>
                     </Box>
                 </Grid>
                 <Box >
-                     <Grid alignItems="center" item xs={12} className="cardEquipe" style={{ background: "#00000090" }}>
+                    <Grid alignItems="center" item xs={12} className="cardEquipe" style={{ background: "#00000090" }}>
                         <Box display="flex" justifyContent="space-between" gap="24px">
                             <Card className="flip-container">
                                 <div className="flipper">
@@ -61,10 +61,10 @@ function SobreNos() {
                                     <div className="back">
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Kathlyn</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Kathlyn Santos</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar o linkedind a kath" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/kathllynleticiadesenvolvedora/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/KathllynLeticia" target="_blank" rel="noreferrer">
