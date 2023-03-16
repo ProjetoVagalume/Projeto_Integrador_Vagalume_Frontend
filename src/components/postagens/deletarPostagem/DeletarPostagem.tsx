@@ -61,7 +61,7 @@ function DeletarPostagem() {
                 Deseja deletar a Postagem:
               </Typography>
               <Typography color="textSecondary" >
-              {post?.titulo}
+              {post?.nome}
               </Typography>
             </Box>
 

@@ -18,7 +18,7 @@ function CadastroTema() {
     const [tema, setTema] = useState<Tema>({
         id: 0,
         descricao: '',
-        tipodescricao: ''
+
     })
 
     useEffect(() => {
@@ -36,7 +36,7 @@ function CadastroTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
                 'Authorization': token
             }
@@ -58,7 +58,7 @@ function CadastroTema() {
 
         if (id !== undefined) {
             console.log(tema)
-            put(`/tema`, tema, setTema, {
+            put(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
@@ -66,7 +66,7 @@ function CadastroTema() {
 
             alert('Tema atualizado com sucesso');
         } else {
-            post(`/tema`, tema, setTema, {
+            post(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
@@ -86,7 +86,7 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={tema.tipodescricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipodescricao" label="tipodescricao" variant="outlined" name="tipodescricao" margin="normal" fullWidth />
+                
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

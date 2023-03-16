@@ -4,5 +4,10 @@
 
 .btnModal{
     border-color: white !important;
-    background-color: white !important;
+    background-color:#001d3d !important;
+    color: white !important;
+    width: 160px;
+    height: 90px;
+    
+
 }
