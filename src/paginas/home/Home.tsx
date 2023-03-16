@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid,Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -34,9 +35,10 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-
-                        <Button variant="outlined" className='botao1'><TextsmsIcon /> Cadastrar Postagem </Button>
-                        <Button variant="outlined" className='botao2'> <p>👋</p> Ver Postagens</Button>
+                        <Link to="/posts">
+                            <Button variant="outlined" className='botao2'> Ver Lavanderias</Button>
+                        </Link>
+                        
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
