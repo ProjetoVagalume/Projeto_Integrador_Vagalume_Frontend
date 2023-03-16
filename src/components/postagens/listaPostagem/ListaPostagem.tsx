@@ -46,10 +46,19 @@ function ListaPostagem() {
                                     Postagens
                                 </Typography>
                                 <Typography variant="h5" component="h2">
-                                    {post.titulo}
+                                    {post.nome}
                                 </Typography>
                                 <Typography variant="body2" component="p">
-                                    {post.texto}
+                                    {post.telefone}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {post.endereco}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {post.horario}
+                                </Typography>
+                                <Typography variant="body2" component="p">
+                                    {post.dias}
                                 </Typography>
                                 <Typography variant="body2" component="p">
                                     {post.tema?.descricao}

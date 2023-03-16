@@ -1,19 +1,20 @@
 .cursor{
     cursor: pointer;
-    color: white !important;
     text-decoration: none;
+    justify-content: space-around !important;
 }
 
-.text-decorator-none{
+.text-decorator-none
+{
     text-decoration: none;
+    color: #0956C4 !important;
 }
-.coricone{
-    color: white !important;
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
+.text-decorator-none:hover
+{
+    color:#001d3d !important;
 }
+
 .estilo{
-    background: #001d3d;
-    background-Image: '#001d3d';
+    background: #fcfcfc!important;
+    background-Image: #fcfcfc!important;
 }
