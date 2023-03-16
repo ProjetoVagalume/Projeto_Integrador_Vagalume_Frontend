@@ -5,7 +5,6 @@ import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 
 function Home() {
