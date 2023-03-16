@@ -5,16 +5,20 @@ import './CadastroTema.css';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 
 function CadastroTema() {
     let navigate = useNavigate();
-    const { id } = useParams<{ id: string }>();
-    const [token, setToken] = useLocalStorage('token');
+    const { id } = useParams<{id: string}>();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
     const [tema, setTema] = useState<Tema>({
         id: 0,
         descricao: '',
-        tipodescricao: ''
+
     })
 
     useEffect(() => {
@@ -53,7 +57,7 @@ function CadastroTema() {
 
         if (id !== undefined) {
             console.log(tema)
-            put(`/tema`, tema, setTema, {
+            put(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
@@ -61,7 +65,7 @@ function CadastroTema() {
 
             alert('Tema atualizado com sucesso');
         } else {
-            post(`/tema`, tema, setTema, {
+            post(`/temas`, tema, setTema, {
                 headers: {
                     'Authorization': token
                 }
@@ -109,7 +113,7 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={tema.tipodescricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipodescricao" label="tipodescricao" variant="outlined" name="tipodescricao" margin="normal" fullWidth />
+                
                 <Button type="submit" variant="contained" color="primary">
                     Finalizar
                 </Button>

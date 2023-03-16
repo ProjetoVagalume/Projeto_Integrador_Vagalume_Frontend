@@ -38,3 +38,18 @@
 {
     background: #57cc99;
 }
+.texto
+{
+    font-weight: bold !important;
+    color: #0956C4   !important; 
+}
+.texto2
+{
+    color: #001d3d !important ;
+    
+}
+.fundo
+{
+
+    background: #1B96CC  !important  ;
+}
