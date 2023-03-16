@@ -103,14 +103,6 @@ function Cards() {
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Lavagens de Malas</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Lavagem especificas que não prejudicam suas malas e mochilas</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
                                             </Box>
                                         </Card>
                                     </div>

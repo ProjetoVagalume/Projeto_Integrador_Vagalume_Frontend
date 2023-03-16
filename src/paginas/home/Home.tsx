@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/moldalPostagem/ModalPostagem';
+import { TokenState } from '../../store/tokens/tokensReducer';
 
 function Home() {
 

@@ -6,70 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.cont-esquerda-sb{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-.cont-esquerda1{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.cont-direita-sb{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.cont-direita1{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.titulo1{
-    font-weight: 'bold' !important;
-    font-family: 'Bebas Neue' !important;
-    font-size: 75px !important;
-    color: #ffffff !important;
-}
 .titulo2{
     font-family: 'Bebas Neue' !important;
     font-size: 100px !important;
     color: #ffffff !important;
-}
-
-.titulo3{
-    font-family: 'Bebas Neue' !important;
-    font-size: 100px !important;
-    color: #000f !important;
-}
-
-.subtitulo2{
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif ;
-}
-.subtitulo{
-    color: #ffffff !important;
-    font-family: 'Roboto', sans-serif ;
-}
-
-.subtitulo1{
-    font-family: 'Bebas Neue' !important;
-    font-size: 50px !important;
-}
-
-.boxtexto {
-    width: 642px !important;
-    height: 144px !important;  
-    color: black !important;
 }
 
 .sobre-bg{
@@ -79,6 +20,8 @@
     background-repeat: no-repeat;
     background-size: bold;
     background-blend-mode: darken;
+
+
 }
 
 .imagem1{
@@ -86,38 +29,6 @@
     height: 170px !important;
     border-radius: 50% !important;
    
-}
-.cardB {
-    width: 100%;
-    height: 350px;
-    background: rgba(0, 0, 0, 0.6) url("https://i.imgur.com/9FzS3go.png") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: darken;
-}
-.cardC {
-    width: 95%;
-    height: 400px;
-    background-image: url("https://i.imgur.com/RpmbmAO.png") !important;
-    background-size: cover;
-    background-position: center;
-}
-
-.cardC1 {
-    width: 600px;
-    height: 220px;
-    background-image: url("https://i.imgur.com/Ud3tScH.png") !important;
-    background-size: cover;
-    background-position: center;
-    margin-top: 80px;
-}
-.cardD {
-    width: 95%;
-    height: 400px;
-    background-image: url("https://i.imgur.com/96eDFz4.png") !important;
-    background-size: cover;
-    background-position: center;
 }
 
 .cardRc {
@@ -179,9 +90,7 @@
     position: relative;
     transform-style: preserve-3d;
 }
-.flip-container:hover .flipper{
-	transform: rotateY(180deg);
-}
+
 .back{
 	position: absolute;
 	width: 100%;
@@ -233,7 +142,4 @@
     display: flex;
     gap: 8px;
     height: calc(100vh - 65px);
-}
-.section1{
-    width:100% !important;
 }

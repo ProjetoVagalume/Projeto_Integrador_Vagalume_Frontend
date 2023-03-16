@@ -38,7 +38,7 @@ function SobreNos() {
                                     <div className="back">
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Guilherme de Souza Fernandes</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Guilherme S. Fernandes</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
                                                     <a href="https://www.linkedin.com/in/guilherme-souza-fernandes-527007245/" target="_blank" rel="noreferrer">
@@ -61,10 +61,10 @@ function SobreNos() {
                                     <div className="back">
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Kathlyn</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Kathllyn Santos</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar o linkedind a kath" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/kathllynleticiadesenvolvedora/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/KathllynLeticia" target="_blank" rel="noreferrer">
@@ -87,7 +87,7 @@ function SobreNos() {
                                                 <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/willian-matheus-3533617b/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/OWillMatheuz" target="_blank" rel="noreferrer">
@@ -110,7 +110,7 @@ function SobreNos() {
                                                 <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/gabriel-santiago-desenvolvedor/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/Gabrielss095" target="_blank" rel="noreferrer">
@@ -133,7 +133,7 @@ function SobreNos() {
                                                 <Typography color="textPrimary" className="fonteCardBack">Tânia Andrade</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/tania-aparecida-da-rocha-andrade/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/TaniaAndrade1984" target="_blank" rel="noreferrer">
@@ -156,7 +156,7 @@ function SobreNos() {
                                                 <Typography color="textPrimary" className="fonteCardBack">Jaqueline Pontes</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/jaqueline-nunes-pontes-44656b264/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
