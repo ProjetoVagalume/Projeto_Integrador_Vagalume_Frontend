@@ -61,7 +61,7 @@ function ModalPostagem () {
       <Button
         variant="outlined"
         className="btnModal"
-        onClick={handleOpen}>Nova Postagem</Button>
+        onClick={handleOpen}>Cadastrar <br></br> Nova Lavanderia </Button>
 
       <Modal
         open={open}

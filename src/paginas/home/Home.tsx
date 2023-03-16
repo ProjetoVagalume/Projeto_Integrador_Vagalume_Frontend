@@ -4,13 +4,16 @@ import { Box } from '@mui/material';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
+import ModalPostagem from '../../components/postagens/moldalPostagem/ModalPostagem';
 
 function Home() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
 
     useEffect(() => {
         if (token == "") {
@@ -25,22 +28,23 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo' >VAGALUME</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo' >  <img src="https://imgur.com/OwJYXzo.png" alt="logo" height="250" /></Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>A sua lavanderia em qualquer lugar! </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                        <ModalPostagem />
                         </Box>
-
-                        <Button variant="outlined" className='botao1'><TextsmsIcon /> Cadastrar Postagem </Button>
-                        <Button variant="outlined" className='botao2'> <p>👋</p> Ver Postagens</Button>
+                        
+                        
+                        <Button variant="outlined" className='btnModal'>  Ver Lavanderias</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
                     <img src="https://media.giphy.com/media/StWs9iYidDmIEjWvmh/giphy.gif" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
-                <TabPostagem />
+                    <TabPostagem />
                 </Grid>
             </Grid>
         </>
