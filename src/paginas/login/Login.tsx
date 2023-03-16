@@ -1,11 +1,13 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+
+
 import { login } from '../../services/Service';
 
 import UsuarioLogin from '../../models/UsuarioLogin';
 import './Login.css';
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -19,7 +21,8 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
 
 
 const className ="estilo"
@@ -42,7 +45,9 @@ function Copyright(props: any) {
 
 function Login() {
   let navigate = useNavigate();
-  const [token, setToken] = useLocalStorage('token');
+  const dispatch = useDispatch();
+  const [token, setToken] = useState('');
+
 
   const [userLogin, setUserLogin] = useState<UsuarioLogin>({
     id: 0,
@@ -59,6 +64,7 @@ function Login() {
 
   useEffect(() => {
     if (token != '') {
+      dispatch(addToken(token));
       navigate('/home');
     }
   }, [token]);
