@@ -12,12 +12,17 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import { useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage';
 import './Navbar.css'
+import { useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/tokensReducer";
+import { addToken } from "../../../store/tokens/actions";
 function Navbar() {
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
         let navigate = useNavigate();
 
         function goLogout(){
-            setToken('')
+            dispatch(addToken(''));
     alert("Usuário deslogado")
     navigate('/login')
 }
@@ -90,3 +95,7 @@ return (
 )
 }
 export default Navbar;
+function dispatch(arg0: any) {
+    throw new Error("Function not implemented.");
+}
+

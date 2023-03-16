@@ -4,13 +4,15 @@ import { Box } from '@mui/material';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 
 function Home() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
 
     useEffect(() => {
         if (token == "") {
