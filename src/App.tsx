@@ -15,6 +15,7 @@ import DeletarTema from './components/tema/deletarTema/DeletarTema';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import Contato from './paginas/contato/Contato';
+import SobreNos from './paginas/sobreNos/SobreNos';
 
 
 
@@ -41,6 +42,8 @@ function App() {
           <Route path="/temas" element={<ListaTema />} />
 
           <Route path="/posts" element={<ListaPostagem />} />
+          
+          <Route path="/sobrenos" element={<SobreNos />} />
 
           <Route path="/formularioPostagem" element={<CadastroPost />} />
 

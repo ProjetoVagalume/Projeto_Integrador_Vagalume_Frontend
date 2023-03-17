@@ -30,7 +30,7 @@ function Contato() {
                                     </Button>
                                 </Box>
                                 <Box paddingX={10} alignItems="center" justifyContent="center" >
-                                    <Card className='cardCont'></Card>
+                                    <Card className="cardCont" ></Card>
                                 </Box>
                             </Box>
                         </form>
