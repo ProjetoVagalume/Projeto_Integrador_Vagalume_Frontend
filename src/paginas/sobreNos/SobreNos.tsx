@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
 import './SobreNos.css';
-import Lavanderias from '../lavanderias/Lavanderias';
+
 
 function SobreNos() {
     return (
@@ -33,84 +33,15 @@ function SobreNos() {
                             <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
-                                        <Card className="cardGuilherme"></Card>
-                                    </div>
-                                    <div className="back">
-                                        <Card className="backgroundBack">
-                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Guilherme de Souza Fernandes</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/guilherme-souza-fernandes-527007245/" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/Gui1213x" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
-                                            </Box>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Card>
-                            <Card className="flip-container">
-                                <div className="flipper">
-                                    <div className="front">
-                                        <Card className="cardKathy"></Card>
-                                    </div>
-                                    <div className="back">
-                                        <Card className="backgroundBack">
-                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Kathlyn Santos</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Junior Fullstack</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/kathllynleticiadesenvolvedora/" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/KathllynLeticia" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
-                                            </Box>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Card>
-                            <Card className="flip-container">
-                                <div className="flipper">
-                                    <div className="front">
-                                        <Card className="cardWil"></Card>
-                                    </div>
-                                    <div className="back">
-                                        <Card className="backgroundBack">
-                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/OWillMatheuz" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
-                                            </Box>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Card>
-                            <Card className="flip-container">
-                                <div className="flipper">
-                                    <div className="front">
                                         <Card className="cardGabriel"></Card>
                                     </div>
                                     <div className="back">
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago </Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/gabriel-santiago-desenvolvedor/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/Gabrielss095" target="_blank" rel="noreferrer">
@@ -125,18 +56,18 @@ function SobreNos() {
                             <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
-                                        <Card className="cardTania"></Card>
+                                        <Card className="cardGuilherme"></Card>
                                     </div>
                                     <div className="back">
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Tânia Andrade</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Guilherme Souza</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Fullstack Junior</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/guilherme-souza-fernandes-527007245/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
-                                                    <a href="https://github.com/TaniaAndrade1984" target="_blank" rel="noreferrer">
+                                                    <a href="https://github.com/Gui1213x" target="_blank" rel="noreferrer">
                                                         <GitHub className='iconeSocial2' />
                                                     </a>
                                                 </Box>
@@ -154,12 +85,81 @@ function SobreNos() {
                                         <Card className="backgroundBack">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Jaqueline Pontes</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
+                                                <Box justifyContent="space-around" alignItems="center" display="flex">
+                                                    <a href="https://www.linkedin.com/in/jaqueline-pontes-44656b264/" target="_blank" rel="noreferrer">
+                                                        <LinkedInIcon className='iconeSocial' />
+                                                    </a>
+                                                    <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
+                                                        <GitHub className='iconeSocial2' />
+                                                    </a>
+                                                </Box>
+                                            </Box>
+                                        </Card>
+                                    </div>
+                                </div>
+                            </Card>
+                            <Card className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="cardKathy"></Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className="backgroundBack">
+                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
+                                                <Typography color="textPrimary" className="fonteCardBack">Kathllyn Santos</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
+                                                <Box justifyContent="space-around" alignItems="center" display="flex">
+                                                    <a href="https://www.linkedin.com/in/kathllynleticiadesenvolvedora/" target="_blank" rel="noreferrer">
+                                                        <LinkedInIcon className='iconeSocial' />
+                                                    </a>
+                                                    <a href="https://github.com/KathllynLeticia" target="_blank" rel="noreferrer">
+                                                        <GitHub className='iconeSocial2' />
+                                                    </a>
+                                                </Box>
+                                            </Box>
+                                        </Card>
+                                    </div>
+                                </div>
+                            </Card>
+                            <Card className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="cardTania"></Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className="backgroundBack">
+                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
+                                                <Typography color="textPrimary" className="fonteCardBack">Tânia Andrade</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
                                                     <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
-                                                    <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
+                                                    <a href="https://github.com/TaniaAndrade1984" target="_blank" rel="noreferrer">
+                                                        <GitHub className='iconeSocial2' />
+                                                    </a>
+                                                </Box>
+                                            </Box>
+                                        </Card>
+                                    </div>
+                                </div>
+                            </Card>
+                            <Card className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="cardWill"></Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className='backgroundBack'>
+                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
+                                                <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java  Fullstack Junior</Typography>
+                                                <Box justifyContent="space-around" alignItems="center" display="flex">
+                                                    <a href="Adicionar link do linkedim" target="_blank" rel="noreferrer">
+                                                        <LinkedInIcon className='iconeSocial' />
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/willian-matheus-3533617b/" target="_blank" rel="noreferrer">
                                                         <GitHub className='iconeSocial2' />
                                                     </a>
                                                 </Box>

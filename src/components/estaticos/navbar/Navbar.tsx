@@ -37,21 +37,21 @@ function Navbar() {
                     <Box mx={3} className="cursor">
                         <Link to="/posts" className="text-decorator-none">
                             <Typography variant="h6" >
-                                Postagens
+                                Lavanderia
                             </Typography>
                         </Link>
                     </Box>
                     <Box mx={3} className='cursor'>
                         <Link to="/temas" className="text-decorator-none">
                             <Typography variant="h6" >
-                                Temas
+                                Serviços
                             </Typography>
                         </Link>
                     </Box>
                     <Box mx={3} className="cursor">
                         <Link to='/formularioTemas' className="text-decorator-none">
                             <Typography variant="h6" color="inherit">
-                                Cadast. Temas
+                                Cadastrar Serviços
                             </Typography>
                         </Link>
                     </Box>
@@ -60,14 +60,6 @@ function Navbar() {
                             Sobre Nós
                         </Typography>
                     </Box>
-                    <Box mx={3} className="cursor">
-                        <Link to='/lavanderias' className="text-decorator-none">
-                            <Typography variant="h6" color="inherit">
-                                Lavanderias
-                            </Typography>
-                        </Link>
-                    </Box>
-
                     <Box mx={3} className="cursor">
                         <Link to='/contato' className="text-decorator-none">
                         <Typography variant="h6" color="inherit">

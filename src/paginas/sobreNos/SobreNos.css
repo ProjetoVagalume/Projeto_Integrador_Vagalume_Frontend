@@ -123,7 +123,7 @@
 .cardTania {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120664909?v=4") !important;
+    background-image: url("https://imgur.com/RZvJGrA.png") !important;
     background-size: cover;
     background-position: center;
 }
@@ -131,7 +131,7 @@
 .cardGuilherme {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120669409?v=4") !important;
+    background-image: url("https://imgur.com/NehpG8I.png") !important;
     background-size: cover;
     background-position: center;
 }
@@ -139,28 +139,28 @@
 .cardGabriel {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/78697652?v=4")!important;
+    background-image: url("https://imgur.com/PvGGy2f.png")!important;
     background-size: cover;
     background-position: center;
 }
-.cardWil{
+.cardWill{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/119905167?v=4")!important;
+    background-image: url("https://imgur.com/WvRD4SK.png")!important;
     background-size: cover;
     background-position: center;
 }
 .cardJaque{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120497663?v=4")!important;
+    background-image: url("https://imgur.com/We4DIUV.png")!important;
     background-size: cover;
     background-position: center;
 }
 .cardKathy{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120657741?v=4")!important;
+    background-image: url("https://imgur.com/OWT0G6c.png")!important;
     background-size: cover;
     background-position: center;
 }
@@ -190,7 +190,7 @@
     backface-visibility: hidden;
 }
 .backgroundBack{
-    background-image: url(https://i.imgur.com/LYl0Z2o.png) !important;
+    background-image: url(https://imgur.com/owl2jcG.jpg) !important;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -198,19 +198,20 @@
 }
 .fonteCardBack{
     font-family: sans-serif !important;
-    color: #3E733C;
+    color:#001d3d;
     font-weight: bold !important;
     font-size: 20px !important;
     text-align: center !important;
-    margin-top: 10px !important;
+    margin-top: 15px !important;
 }
 .fonteCardBack2{
     font-family: sans-serif !important;
-    color: #3E733C;
-    font-size: 16px !important;
-    text-align: center;
-    margin-top: 30px !important;
+    color: #001d3d;
+    font-size: 15px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
     margin-bottom: 30px !important;
+
 }
 .alinhamentoBack{
     margin-top: 15px;
@@ -229,26 +230,26 @@
 }
 
 .iconeSocial{
-    font-size: 60px !important;
+    font-size: 40px !important;
     transition: transform 0.5s;
-    color: #3E733C;
+    color:  #001d3d;
     align-items: center;
 }
 .iconeSocial:hover{
     transform: scale(1.1);
-    color: #3e733c72;
+    color: #1B96CC;
 }
 
 .iconeSocial2 {
-    font-size: 50px !important;
+    font-size: 40px !important;
     transition: transform 0.5s;
-    color: #3E733C;
+    color: #001d3d;
     align-items: center;
 }
 
 .iconeSocial2:hover{
     transform: scale(1.1);
-    color: #3e733c72;
+    color: #1B96CC;
 }
 
 .intro{
