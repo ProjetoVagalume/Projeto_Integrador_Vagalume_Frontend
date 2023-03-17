@@ -5,9 +5,12 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage';
 import './Navbar.css'
+
 function Navbar() {
+    
     const [token, setToken] = useLocalStorage('token');
     let navigate = useNavigate();
+    
 
     function goLogout() {
         setToken('')
@@ -52,7 +55,7 @@ function Navbar() {
                                 <Typography variant="h6" color="inherit">
                                     Sobre Nós
                                 </Typography>
-                        </Box>
+                            </Box>
                         <Box mx={3} className="cursor">
                             <Link to='/lavanderias' className="text-decorator-none">
                                 <Typography variant="h6" color="inherit">
@@ -60,7 +63,7 @@ function Navbar() {
                                 </Typography>
                             </Link>
                         </Box>
-                        <Box mx={3} className="cursor"> 
+                        <Box mx={3} className="cursor">
                             <Typography variant="h6" color="inherit">
                                 Contatos
                             </Typography>

@@ -33,54 +33,47 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-
 .titulo1{
     font-weight: 'bold' !important;
     font-family: 'Bebas Neue' !important;
     font-size: 75px !important;
-    color: #ffffff !important;
+    color: #fcfcfc !important;
 }
 .titulo2{
     font-family: 'Bebas Neue' !important;
     font-size: 100px !important;
-    color: #ffffff !important;
+    color: #fcfcfc !important;
 }
-
 .titulo3{
     font-family: 'Bebas Neue' !important;
     font-size: 100px !important;
     color: #000f !important;
 }
-
 .subtitulo2{
     color: #ffffff;
     font-family: 'Roboto', sans-serif ;
 }
 .subtitulo{
-    color: #ffffff !important;
+    color: #fcfcfc !important;
     font-family: 'Roboto', sans-serif ;
 }
-
 .subtitulo1{
     font-family: 'Bebas Neue' !important;
     font-size: 50px !important;
 }
-
 .boxtexto {
     width: 642px !important;
     height: 144px !important;  
     color: black !important;
 }
-
 .sobre-bg{
-    background: linear-gradient(93.59deg, rgba(0, 0, 0, 0.6) 13.61%, rgba(0, 0, 0, 0) 87.41%), url("https://user-images.githubusercontent.com/120657741/214131061-4d05de9f-ba11-4a70-b95c-92843ead3883.jpg") fixed center center;
+    background: linear-gradient(93.59deg, #0956C4(0, 0, 0, 0.6) 13.61%, #0956C4(0, 0, 0, 0) 87.41%), url("https://imgur.com/RZvJGrA") fixed center center;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
 }
-
 .imagem1{
     width: 170px !important;
     height: 170px !important;
@@ -123,7 +116,7 @@
 .cardTania {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120664909?v=4") !important;
+    background-image: url("https://imgur.com/RZvJGrA.png") !important;
     background-size: cover;
     background-position: center;
 }
@@ -131,7 +124,7 @@
 .cardGuilherme {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120669409?v=4") !important;
+    background-image: url("https://imgur.com/NehpG8I.png") !important;
     background-size: cover;
     background-position: center;
 }
@@ -139,28 +132,28 @@
 .cardGabriel {
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/78697652?v=4")!important;
+    background-image: url("https://imgur.com/PvGGy2f.png")!important;
     background-size: cover;
     background-position: center;
 }
 .cardWil{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/119905167?v=4")!important;
+    background-image: url("https://imgur.com/WvRD4SK.png")!important;
     background-size: cover;
     background-position: center;
 }
 .cardJaque{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120497663?v=4")!important;
+    background-image: url("https://imgur.com/We4DIUV.png")!important;
     background-size: cover;
     background-position: center;
 }
 .cardKathy{
     width: 188px;
     height: 253px;
-    background-image: url("https://avatars.githubusercontent.com/u/120657741?v=4")!important;
+    background-image: url("https://imgur.com/OWT0G6c.png")!important;
     background-size: cover;
     background-position: center;
 }
@@ -168,10 +161,9 @@
     width: 188px;
     height: 253px;
     perspective: 1000px;
-    background-color: rgba(255, 255, 255, 0.096) !important;
-    box-shadow: 0px 8px 70px rgba(255, 255, 255, 0.25) !important;
+    background-color: #1B96CC  !important;
+    box-shadow: 0px 8px 70px #1B96CC  !important;
 }
-
 .flipper{
     width: 100%;
     height: 100%;
@@ -189,8 +181,8 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
-.backgroundBack{
-    background-image: url(https://i.imgur.com/LYl0Z2o.png) !important;
+.backgroundBack{ 
+    background-image: url(https://imgur.com/owl2jcG.png) !important;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -198,7 +190,7 @@
 }
 .fonteCardBack{
     font-family: sans-serif !important;
-    color: #3E733C;
+    color: #001d3d  !important;
     font-weight: bold !important;
     font-size: 20px !important;
     text-align: center !important;
@@ -206,7 +198,7 @@
 }
 .fonteCardBack2{
     font-family: sans-serif !important;
-    color: #3E733C;
+    color: #1a2634 !important  ;
     font-size: 16px !important;
     text-align: center;
     margin-top: 30px !important;
@@ -231,24 +223,24 @@
 .iconeSocial{
     font-size: 60px !important;
     transition: transform 0.5s;
-    color: #3E733C;
+    color: #001d3d !important;
     align-items: center;
 }
 .iconeSocial:hover{
     transform: scale(1.1);
-    color: #3e733c72;
+    color: #001d3d !important;
 }
 
 .iconeSocial2 {
     font-size: 50px !important;
     transition: transform 0.5s;
-    color: #3E733C;
+    color: #001d3d !important;
     align-items: center;
 }
 
 .iconeSocial2:hover{
     transform: scale(1.1);
-    color: #3e733c72;
+    color: #001d3d !important;
 }
 
 .intro{

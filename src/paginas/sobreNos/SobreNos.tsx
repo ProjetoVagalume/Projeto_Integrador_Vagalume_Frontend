@@ -12,17 +12,17 @@ function SobreNos() {
 
                 <Grid item xs={12} className="intro">
                     <Box>
-                        <Typography color="textPrimary" variant="h4" align="center" className="titulo2">Qual nossas motivações para inicar este projeto</Typography>
+                        <Typography color="textPrimary" variant="h4" align="center" className="titulo2">Quais foram nossas motivações para inicar este projeto</Typography>
                         <Box display="flex" flexDirection="column">
                             <Typography color="textPrimary" variant="h5" align="center" className="subtitulo">
-                                Identificamos que a infelizmente os motoristas de caminhões estão cada vez mais distantes de condições basicas de trabalho.
-                                Infelizmente nossos motoristas chegam a passar meses longe de sua familia e não conseguem ao menos fazer a lavagens das proprias roupas de forma basica.
+                                Identificamos que infelizmente os motoristas de caminhões estão cada vez mais distantes das condições básicas de trabalho. Nossos motoristas frequentemente passam meses longe de suas famílias e 
+                                muitas vezes são incapazes de realizar tarefas simples, como lavar suas próprias roupas.
+                                Para abordar esse problema, desenvolvemos um projeto que ajudará nossos motoristas a encontrar lavanderias de forma fácil e acessível. Não só isso trará satisfação para nossos clientes motoristas, 
+                                mas também irá impulsionar o capital financeiro da região, oferecendo oportunidades para pessoas que estão fora do mercado de trabalho ou que desejam mudar de área.
                             </Typography>
                             <Typography color="textPrimary" variant="h5" align="center" className="subtitulo">
-                                E pensamos em algo que vai ajudar, a partir deste projeto nossos motorista vão conseguir pesquizar as lavanderia de forma simples e com um baixo custo.
-                                Alem de trazer satisfação aos clientes motorista estamos ajudando no capital financeiro da região, produzindo oportunidades a pessoas que estão longe do mercador de trabalho 
-                                ou que também querem mudar de area. 
-                                A junção  dos motorista com a lavanderia é trazer um bem estar para a pessoa dirigir por dias e o bem estar de um familia que pode estar vivendo apenas desta renda ou como uma renda extra.
+                            Ao unir os motoristas com as lavanderias, nosso objetivo é proporcionar bem-estar tanto para os motoristas que passam dias dirigindo 
+                            quanto para as famílias que dependem dessa renda, além de criar oportunidades econômicas para a região
                             </Typography>
                         </Box>
                     </Box>
@@ -30,13 +30,39 @@ function SobreNos() {
                 <Box >
                      <Grid alignItems="center" item xs={12} className="cardEquipe" style={{ background: "#00000090" }}>
                         <Box display="flex" justifyContent="space-between" gap="24px">
+
+                        <Card className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
+                                        <Card className="cardGabriel"></Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className='backgroundBack'>
+                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
+                                                <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Box justifyContent="space-around" alignItems="center" display="flex">
+                                                    <a href="https://www.linkedin.com/in/gabriel-santiago-desenvolvedor/" target="_blank" rel="noreferrer">
+                                                        <LinkedInIcon className='iconeSocial' />
+                                                    </a>
+                                                    <a href="https://github.com/Gabrielss095" target="_blank" rel="noreferrer">
+                                                        <GitHub className='iconeSocial2' />
+                                                    </a>
+                                                </Box>
+                                            </Box>
+                                        </Card>
+                                    </div>
+                                </div>
+                            </Card>
+
+
                             <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
                                         <Card className="cardGuilherme"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className='backgroundBack'>
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Guilherme S. Fernandes</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
@@ -56,10 +82,33 @@ function SobreNos() {
                             <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
+                                        <Card className="cardJaque"></Card>
+                                    </div>
+                                    <div className="back">
+                                        <Card className='backgroundBack'>
+                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
+                                                <Typography color="textPrimary" className="fonteCardBack">Jaqueline Pontes</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
+                                                <Box justifyContent="space-around" alignItems="center" display="flex">
+                                                    <a href="https://www.linkedin.com/in/jaqueline-nunes-pontes-44656b264/" target="_blank" rel="noreferrer">
+                                                        <LinkedInIcon className='iconeSocial' />
+                                                    </a>
+                                                    <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
+                                                        <GitHub className='iconeSocial2' />
+                                                    </a>
+                                                </Box>
+                                            </Box>
+                                        </Card>
+                                    </div>
+                                </div>
+                            </Card>                            
+                            <Card className="flip-container">
+                                <div className="flipper">
+                                    <div className="front">
                                         <Card className="cardKathy"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className='backgroundBack'>
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Kathllyn Santos</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
@@ -79,56 +128,10 @@ function SobreNos() {
                             <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
-                                        <Card className="cardWil"></Card>
-                                    </div>
-                                    <div className="back">
-                                        <Card className="backgroundBack">
-                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/willian-matheus-3533617b/" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/OWillMatheuz" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
-                                            </Box>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Card>
-                            <Card className="flip-container">
-                                <div className="flipper">
-                                    <div className="front">
-                                        <Card className="cardGabriel"></Card>
-                                    </div>
-                                    <div className="back">
-                                        <Card className="backgroundBack">
-                                            <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/gabriel-santiago-desenvolvedor/" target="_blank" rel="noreferrer">
-                                                        <LinkedInIcon className='iconeSocial' />
-                                                    </a>
-                                                    <a href="https://github.com/Gabrielss095" target="_blank" rel="noreferrer">
-                                                        <GitHub className='iconeSocial2' />
-                                                    </a>
-                                                </Box>
-                                            </Box>
-                                        </Card>
-                                    </div>
-                                </div>
-                            </Card>
-                            <Card className="flip-container">
-                                <div className="flipper">
-                                    <div className="front">
                                         <Card className="cardTania"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className='backgroundBack'>
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Tânia Andrade</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
@@ -145,21 +148,21 @@ function SobreNos() {
                                     </div>
                                 </div>
                             </Card>
-                            <Card className="flip-container">
+                           <Card className="flip-container">
                                 <div className="flipper">
                                     <div className="front">
-                                        <Card className="cardJaque"></Card>
+                                        <Card className="cardWil"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className='backgroundBack'>
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Jaqueline Pontes</Typography>
+                                                <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Junior Fullstack</Typography>
                                                 <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/jaqueline-nunes-pontes-44656b264/" target="_blank" rel="noreferrer">
+                                                    <a href="https://www.linkedin.com/in/willian-matheus-3533617b/" target="_blank" rel="noreferrer">
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
-                                                    <a href="https://github.com/jaquenunespontes" target="_blank" rel="noreferrer">
+                                                    <a href="https://github.com/OWillMatheuz" target="_blank" rel="noreferrer">
                                                         <GitHub className='iconeSocial2' />
                                                     </a>
                                                 </Box>
@@ -168,7 +171,7 @@ function SobreNos() {
                                     </div>
                                 </div>
                             </Card>
-                        </Box>
+                            </Box>
                     </Grid>
                 </Box>
             </Grid>

@@ -3,9 +3,9 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 
-import { login } from '../../services/Service';
+import { login, cadastroUsuario } from '../../services/Service';
 
-import UsuarioLogin from '../../models/UsuarioLogin';
+
 import './Login.css';
 
 import Avatar from '@mui/material/Avatar';
@@ -23,6 +23,8 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/actions';
+import UsuarioLogin from '../../models/UsuarioLogin';
+
 
 
 const className ="estilo"
@@ -161,7 +163,7 @@ function Login() {
                 <Grid item  className="texto2">
                   <Link to=''>
                     {"Não tem uma conta? Inscrever-se"}
-                  </Link>
+                </Link>
                 </Grid>
               </Grid>
               <Copyright sx={{ mt: 5 }} />
