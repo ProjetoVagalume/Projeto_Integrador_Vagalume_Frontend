@@ -21,14 +21,13 @@ function SobreNos() {
                                 mas também irá impulsionar o capital financeiro da região, oferecendo oportunidades para pessoas que estão fora do mercado de trabalho ou que desejam mudar de área.
                             </Typography>
                             <Typography color="textPrimary" variant="h5" align="center" className="subtitulo">
-                            Ao unir os motoristas com as lavanderias, nosso objetivo é proporcionar bem-estar tanto para os motoristas que passam dias dirigindo 
-                            quanto para as famílias que dependem dessa renda, além de criar oportunidades econômicas para a região
+
                             </Typography>
                         </Box>
                     </Box>
                 </Grid>
                 <Box >
-                     <Grid alignItems="center" item xs={12} className="cardEquipe" style={{ background: "#00000090" }}>
+                    <Grid alignItems="center" item xs={12} className="cardEquipe" style={{ background: "#00000090" }}>
                         <Box display="flex" justifyContent="space-between" gap="24px">
 
                         <Card className="flip-container">
@@ -64,10 +63,7 @@ function SobreNos() {
                                     <div className="back">
                                         <Card className='backgroundBack'>
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
-                                                <Typography color="textPrimary" className="fonteCardBack">Guilherme S. Fernandes</Typography>
-                                                <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
-                                                <Box justifyContent="space-around" alignItems="center" display="flex">
-                                                    <a href="https://www.linkedin.com/in/guilherme-souza-fernandes-527007245/" target="_blank" rel="noreferrer">
+
                                                         <LinkedInIcon className='iconeSocial' />
                                                     </a>
                                                     <a href="https://github.com/Gui1213x" target="_blank" rel="noreferrer">
