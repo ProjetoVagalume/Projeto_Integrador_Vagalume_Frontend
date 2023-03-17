@@ -159,7 +159,7 @@ function Login() {
                   
                 </Grid>
                 <Grid item  className="texto2">
-                  <Link to=''>
+                  <Link to='/cadastrousuario'>
                     {"Não tem uma conta? Inscrever-se"}
                   </Link>
                 </Grid>

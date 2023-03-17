@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .cursor{
     cursor: pointer;
     text-decoration: none;
     justify-content: space-around !important;
+    
 }
 
 .text-decorator-none

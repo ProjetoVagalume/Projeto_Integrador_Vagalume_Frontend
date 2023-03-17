@@ -1,19 +1,30 @@
 .box1{
-    background: #02c39a;
-    height: "120px";
-    color:white !important;
+    background: #1B96CC  !important;
+    height: "80px";
 }
 .box2{
 background-color: #001d3d !important;
 color: white !important;
 
-}
 
-.redes{
-
-    font-size: 60px !important;
-    color: white !important;
 }
 .textos{
     color: white !important;
+    font-size: 10px !important;
+}
+.textos2{
+    color: white !important;
+    font-size: 20px !important;
+}   
+
+.social {
+   font-size: 20px !important; 
+    margin: 10px;
+    color: #fcfcfc !important;
+    transition: transform 1s !important;
+}
+
+.social:hover {
+    transform: scale(1.2);
+    color: #fcfcfc !important;
 }

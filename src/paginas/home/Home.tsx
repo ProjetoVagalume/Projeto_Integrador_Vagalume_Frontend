@@ -1,23 +1,33 @@
 import React, { useEffect } from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import TextsmsIcon from '@material-ui/icons/Textsms';
 import './Home.css';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/moldalPostagem/ModalPostagem';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function Home() {
 
     let navigate = useNavigate();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -33,10 +43,10 @@ function Home() {
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
-                        <ModalPostagem />
+                            <ModalPostagem />
                         </Box>
-                        
-                        
+
+
                         <Button variant="outlined" className='btnModal'>  Ver Lavanderias</Button>
                     </Box>
                 </Grid>
