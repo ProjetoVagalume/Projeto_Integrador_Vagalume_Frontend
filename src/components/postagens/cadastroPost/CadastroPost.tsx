@@ -118,7 +118,7 @@ function CadastroPost() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="fundocard2">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastrar Lavanderia</Typography>
                 <TextField value={postagem.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="nome" label="Nome da Lavanderia" variant="outlined" name="nome" margin="normal" fullWidth />
@@ -128,7 +128,7 @@ function CadastroPost() {
                 <TextField value={postagem.dias} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="dias" label="Dias de Funcionamento" name="dias" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Serviços </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -143,7 +143,7 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+                    <FormHelperText>Escolha um serviço para a sua lavanderia</FormHelperText>
                     <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>

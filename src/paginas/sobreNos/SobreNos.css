@@ -72,13 +72,9 @@
     color: black !important;
 }
 
-.sobre-bg{
-    background: linear-gradient(93.59deg, rgba(0, 0, 0, 0.6) 13.61%, rgba(0, 0, 0, 0) 87.41%), url("https://user-images.githubusercontent.com/120657741/214131061-4d05de9f-ba11-4a70-b95c-92843ead3883.jpg") fixed center center;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
+.fundo{
+    background: #1B96CC !important;
+   
 }
 
 .imagem1{
@@ -86,38 +82,6 @@
     height: 170px !important;
     border-radius: 50% !important;
    
-}
-.cardB {
-    width: 100%;
-    height: 350px;
-    background: rgba(0, 0, 0, 0.6) url("https://i.imgur.com/9FzS3go.png") !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: darken;
-}
-.cardC {
-    width: 95%;
-    height: 400px;
-    background-image: url("https://i.imgur.com/RpmbmAO.png") !important;
-    background-size: cover;
-    background-position: center;
-}
-
-.cardC1 {
-    width: 600px;
-    height: 220px;
-    background-image: url("https://i.imgur.com/Ud3tScH.png") !important;
-    background-size: cover;
-    background-position: center;
-    margin-top: 80px;
-}
-.cardD {
-    width: 95%;
-    height: 400px;
-    background-image: url("https://i.imgur.com/96eDFz4.png") !important;
-    background-size: cover;
-    background-position: center;
 }
 
 .cardTania {
@@ -189,10 +153,10 @@
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
-.backgroundBack{
-    background-image: url(https://imgur.com/owl2jcG.jpg) !important;
+.backgroundBack1{
+    background-image: url(https://imgur.com/owl2jcG.jpg)!important;
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     width: 100%;
     height: 100%;
 }

@@ -13,7 +13,7 @@ function ListaPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     let navigate = useNavigate();
 
     useEffect(() => {
@@ -42,11 +42,12 @@ function ListaPostagem() {
         <>
             {
                 posts.map(post => (
-                    <Box m={2} >
-                        <Card variant="outlined">
+
+                    <Box className="fundo1" m={2}  >
+                        <Card variant="outlined" className="fundocard">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
-                                    Postagens
+                                    Lavanderia
                                 </Typography>
                                 <Typography variant="h5" component="h2">
                                     {post.nome}

@@ -8,7 +8,7 @@ import './SobreNos.css';
 function SobreNos() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="sobre-bg" xs={12}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className="fundo" xs={12}>
 
                 <Grid item xs={12} className="intro">
                     <Box>
@@ -36,7 +36,7 @@ function SobreNos() {
                                         <Card className="cardGabriel"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Gabriel Santiago </Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Fullstack Java Junior</Typography>
@@ -59,7 +59,7 @@ function SobreNos() {
                                         <Card className="cardGuilherme"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Guilherme Souza</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java Fullstack Junior</Typography>
@@ -82,7 +82,7 @@ function SobreNos() {
                                         <Card className="cardJaque"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Jaqueline Pontes</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
@@ -105,7 +105,7 @@ function SobreNos() {
                                         <Card className="cardKathy"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Kathllyn Santos</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
@@ -128,7 +128,7 @@ function SobreNos() {
                                         <Card className="cardTania"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className="backgroundBack">
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Tânia Andrade</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedora Java Fullstack Junior</Typography>
@@ -151,7 +151,7 @@ function SobreNos() {
                                         <Card className="cardWill"></Card>
                                     </div>
                                     <div className="back">
-                                        <Card className='backgroundBack'>
+                                        <Card className="backgroundBack1">
                                             <Box justifyContent="center" alignItems="center" display="-moz-initial" paddingX={3} className="alinhamentoBack">
                                                 <Typography color="textPrimary" className="fonteCardBack">Willian Matheus</Typography>
                                                 <Typography color="textPrimary" className="fonteCardBack2">Desenvolvedor Java  Fullstack Junior</Typography>

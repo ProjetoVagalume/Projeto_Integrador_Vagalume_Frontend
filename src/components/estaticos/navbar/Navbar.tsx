@@ -56,28 +56,30 @@ function Navbar() {
                         </Link>
                     </Box>
                     <Box mx={3} className="cursor">
-                        <Typography variant="h6" color="inherit">
-                            Sobre Nós
-                        </Typography>
+                        <Link to='/sobrenos' className="text-decorator-none">
+                            <Typography variant="h6" color="inherit">
+                                Sobre Nós
+                            </Typography>
+                        </Link>
                     </Box>
                     <Box mx={3} className="cursor">
                         <Link to='/contato' className="text-decorator-none">
-                        <Typography variant="h6" color="inherit">
-                            Contatos
-                        </Typography>
+                            <Typography variant="h6" color="inherit">
+                                Contatos
+                            </Typography>
                         </Link>
                     </Box>
-                <Box mx={3} className="cursor" onClick={goLogout}>
-                    <Link to='/login' className="text-decorator-none">
-                        <Typography variant="h6" color="inherit" >
-                            Sair
-                        </Typography>
-                    </Link>
+                    <Box mx={3} className="cursor" onClick={goLogout}>
+                        <Link to='/login' className="text-decorator-none">
+                            <Typography variant="h6" color="inherit" >
+                                Sair
+                            </Typography>
+                        </Link>
+                    </Box>
+
                 </Box>
 
-            </Box>
-
-        </Toolbar>
+            </Toolbar>
         </AppBar >
     }
 
